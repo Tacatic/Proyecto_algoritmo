@@ -111,12 +111,12 @@ public class login extends javax.swing.JFrame {
         if (usuarioValidado == true)
             
         {
-            JOptionPane.showMessageDialog(this , "Aprobado", "Taca", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this , "Aprobado", "DAVID", JOptionPane.WARNING_MESSAGE);
         menu.setVisible(true);
         }
         else
         {
-        JOptionPane.showMessageDialog(this , "ERROR", "Taca", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(this , "ERROR", "DAVID", JOptionPane.ERROR_MESSAGE);
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed

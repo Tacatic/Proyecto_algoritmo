@@ -15,7 +15,7 @@ public class Login {
     {
     boolean usuariovalidado = false;
     
-    if (("admin").equals(usuario) && ("1234").equals(contraseña))
+    if (("TACA").equals(usuario) && ("tacatic").equals(contraseña))
     
     {
     usuariovalidado = true;

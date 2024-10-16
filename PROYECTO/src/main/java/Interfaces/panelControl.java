@@ -35,7 +35,12 @@ public class panelControl extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        PProductos.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+
+        PProductos.setBackground(new java.awt.Color(255, 255, 204));
         PProductos.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         PProductos.setText("Productos");
         PProductos.addActionListener(new java.awt.event.ActionListener() {
@@ -44,7 +49,7 @@ public class panelControl extends javax.swing.JFrame {
             }
         });
 
-        PCategorias.setBackground(new java.awt.Color(204, 255, 204));
+        PCategorias.setBackground(new java.awt.Color(255, 255, 204));
         PCategorias.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         PCategorias.setText("Categorias");
         PCategorias.addActionListener(new java.awt.event.ActionListener() {
@@ -74,9 +79,10 @@ public class panelControl extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel3.setBackground(new java.awt.Color(51, 255, 153));
         jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel1.setBackground(new java.awt.Color(204, 255, 51));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Panel de acceso");
 
@@ -108,7 +114,7 @@ public class panelControl extends javax.swing.JFrame {
                         .addGap(32, 32, 32))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(105, 105, 105))))
+                        .addGap(93, 93, 93))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

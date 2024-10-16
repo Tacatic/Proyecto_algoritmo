@@ -41,13 +41,17 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+
+        jLabel1.setBackground(new java.awt.Color(204, 204, 255));
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabel1.setText("Usuario");
 
+        jLabel2.setBackground(new java.awt.Color(204, 204, 255));
         jLabel2.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         jLabel2.setText("Contraseña");
 
+        jButton1.setBackground(new java.awt.Color(255, 51, 0));
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jButton1.setText("Validar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -115,12 +119,12 @@ public class login extends javax.swing.JFrame {
         if (usuarioValidado == true)
             
         {
-            JOptionPane.showMessageDialog(this , "Aprobado", "DAVID", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this , "Bienvenido", "DAVID", JOptionPane.WARNING_MESSAGE);
         menu.setVisible(true);
         }
         else
         {
-        JOptionPane.showMessageDialog(this , "ERROR", "DAVID", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(this , "ERROR", " NO eres DAVID", JOptionPane.ERROR_MESSAGE);
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed

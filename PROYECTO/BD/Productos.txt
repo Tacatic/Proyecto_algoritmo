@@ -6,3 +6,6 @@ david,123,cd56,no hay,celulares,DEBE VALIDACION DE PRODUCTO
 Manuel,212236623,PP33PP,No,bebe,Hermoso
 ,,,,,
 david,232,12,1,baño,dscsd
+david,12,1pp,1,luces,no hay
+joso,12,ff4,2,bolsas,es pequeño
+Lester,10,0101,5,cocina,lester es muy buena persona

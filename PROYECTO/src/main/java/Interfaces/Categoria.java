@@ -140,7 +140,9 @@ public class Categoria extends javax.swing.JFrame {
         crudDB escritura = new crudDB();
         boolean estadoEscritura = escritura.escrituraDB("categorias",Codigo.getText()+" "+ Nombre.getText());
         System.out.println (estadoEscritura);
-        // TODO add your handling code here:
+        
+        Codigo.setText("");
+        Nombre.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed

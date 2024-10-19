@@ -49,8 +49,14 @@ public class Productos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+
+        jTextField1.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField1.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jTextField1.setText("Nombre");
 
+        jTextField2.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField2.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jTextField2.setText("Precio");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,19 +64,28 @@ public class Productos extends javax.swing.JFrame {
             }
         });
 
+        jTextField3.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField3.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jTextField3.setText("codigoProducto");
 
-        jTextField4.setText("Stock");
+        jTextField4.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField4.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
+        jTextField4.setText("Cantidad de producto");
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
 
+        jTextField5.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField5.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jTextField5.setText("categoriaProducto");
 
+        jTextField6.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField6.setFont(new java.awt.Font("Century Schoolbook", 1, 14)); // NOI18N
         jTextField6.setText("Descripcion");
 
+        BotonProd.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
         BotonProd.setText("Guardar");
         BotonProd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,15 +93,28 @@ public class Productos extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
         jButton2.setText("Limpiar");
 
         DescripcionProducto.setColumns(20);
         DescripcionProducto.setRows(5);
         jScrollPane1.setViewportView(DescripcionProducto);
 
+        NombreProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NombreProductoActionPerformed(evt);
+            }
+        });
+
         StockProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 StockProductoActionPerformed(evt);
+            }
+        });
+
+        categoriaProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                categoriaProductoActionPerformed(evt);
             }
         });
 
@@ -97,69 +125,76 @@ public class Productos extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotonProd)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTextField6)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                        .addComponent(jTextField5)
                         .addComponent(jTextField4)
                         .addComponent(jTextField3)
-                        .addComponent(jTextField2)
-                        .addComponent(jTextField1)))
-                .addGap(18, 18, 18)
+                        .addComponent(jTextField2))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NombreProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PrecioProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(codigoProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(StockProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(categoriaProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(40, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(StockProducto)
+                            .addComponent(categoriaProducto)
+                            .addComponent(PrecioProducto)
+                            .addComponent(codigoProducto))
+                        .addGap(114, 114, 114))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(59, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(NombreProducto)
+                        .addContainerGap())))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(BotonProd)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton2)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NombreProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NombreProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(PrecioProducto)))
+                    .addComponent(PrecioProducto))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(codigoProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
+                    .addComponent(codigoProducto))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(StockProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(categoriaProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BotonProd)
-                            .addComponent(jButton2)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(BotonProd))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -182,11 +217,13 @@ public class Productos extends javax.swing.JFrame {
     }//GEN-LAST:event_StockProductoActionPerformed
 
     private void BotonProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonProdActionPerformed
-   System.out.println("Ingresa al boton");     
+    
         crudDB escritura = new crudDB();
-        boolean estadoEscritura = escritura.escrituraDB("Productos",NombreProducto.getText()+","+PrecioProducto.getText()+","+codigoProducto.getText()+","+StockProducto.getText()+","+ categoriaProducto.getText()+","+DescripcionProducto.getText());
+        boolean estadoEscritura = escritura.escrituraDB("Productos",NombreProducto.getText()+"|"+PrecioProducto.getText()+"|"+codigoProducto.getText()+"|"+StockProducto.getText()+"|"+ categoriaProducto.getText()+"|"+DescripcionProducto.getText());
         System.out.println (estadoEscritura);    
         
+        
+        // Lo usamos para setear la interfas y dejar en blanco los espacios de texto.
         NombreProducto.setText("");
         PrecioProducto.setText("");
         codigoProducto.setText("");
@@ -195,6 +232,14 @@ public class Productos extends javax.swing.JFrame {
         DescripcionProducto.setText("");
 // TODO add your handling code here:
     }//GEN-LAST:event_BotonProdActionPerformed
+
+    private void NombreProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NombreProductoActionPerformed
+
+    private void categoriaProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoriaProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_categoriaProductoActionPerformed
 
     /**
      * @param args the command line arguments

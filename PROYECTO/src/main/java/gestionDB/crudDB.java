@@ -37,5 +37,9 @@ public class crudDB {
             
             return estadoEscritura;
     }    
+
+    public boolean escrituraDB(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }  
 

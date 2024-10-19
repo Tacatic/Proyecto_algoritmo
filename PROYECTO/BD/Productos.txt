@@ -9,3 +9,6 @@ david,232,12,1,baño,dscsd
 david,12,1pp,1,luces,no hay
 joso,12,ff4,2,bolsas,es pequeño
 Lester,10,0101,5,cocina,lester es muy buena persona
+Plancha,200,PP25,10,Electrodomesticos,Que plancha es de color verde y que esta bonita
+ajnsjndjnas,,,,,
+plancha|200|23PP|22|electronicos|la plancha es roja
